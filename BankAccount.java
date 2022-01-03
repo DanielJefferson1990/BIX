@@ -3,8 +3,8 @@ import java.util.List;
 import java.util.Objects;
 
 public class BankAccount {
-    private Long id;
-    private String username;
+    private Long id; // unique user id
+    private String username; // user defined nickname for his/her account
     private String firstName;
     private String secondName;
     private String address;
@@ -45,6 +45,9 @@ public class BankAccount {
         this.secondName = secondName;
     }
 
+    /**
+     * @return fullname of this user
+     */
     public String getFullname() {
         return firstName + " " + secondName;
     }
@@ -89,6 +92,11 @@ public class BankAccount {
         this.accountNumbers = accountNumbers;
     }
 
+    /**
+     * 
+     * @param accountNumber new account number
+     * @return updated account number list
+     */
     public List<String> addAccountNumbers(String accountNumber) {
         if(accountNumbers == null) {
             accountNumbers = new ArrayList<>();
