@@ -45,7 +45,8 @@ public class BankAccount {
         this.secondName = secondName;
     }
 
-    /**
+    /** 
+     * Get full name
      * @return fullname of this user
      */
     public String getFullname() {
@@ -93,7 +94,7 @@ public class BankAccount {
     }
 
     /**
-     * 
+     * Add new account number
      * @param accountNumber new account number
      * @return updated account number list
      */
